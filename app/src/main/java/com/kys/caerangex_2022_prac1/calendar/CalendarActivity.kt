@@ -92,8 +92,7 @@ class CalendarActivity : Fragment(), OnItemListener {
     }
 
     private fun yearMonthFromDate(date: LocalDate): String {
-        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy년 mm월")
-        Log.d("yearMonthFromDate", formatter.toString())
+        val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("YYYY년 MM월")
         return date.format(formatter)
     }
 
