@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:paddingTop="24dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/galaxy"
+    app:layout_constraintVertical_weight="7">
+
+    <TextView
+        android:id="@+id/main_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:hint="오늘 하루는 어떠셨나요?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:hint="한 줄로 남겨봐요"
+        android:paddingStart="24sp"
+        android:paddingEnd="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/emotion_status_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_status_tv" />
+
+    <TextView
+        android:id="@+id/emotion_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="간단하게 남겨봐요"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/flow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32sp"
+        android:layout_marginEnd="32sp"
+        app:constraint_referenced_ids="emotion1, emotion2, emotion3, emotion4, emotion5, emotion6"
+        app:flow_horizontalGap="16sp"
+        app:flow_maxElementsWrap="2"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emotion_status_tv" />
+
+    <Button
+        android:id="@+id/emotion1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="24sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="24sp"
+        android:paddingBottom="12sp"
+        android:text="무서웠어"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/emotion2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="24sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="24sp"
+        android:paddingBottom="12sp"
+        android:text="놀랐어"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/emotion3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="24sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="24sp"
+        android:paddingBottom="12sp"
+        android:text="화났어"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/emotion4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="24sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="24sp"
+        android:paddingBottom="12sp"
+        android:text="슬펐어"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/emotion5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="24sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="24sp"
+        android:paddingBottom="12sp"
+        android:text="즐거웠어"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/emotion6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounding_block"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:paddingStart="24sp"
+        android:paddingTop="12sp"
+        android:paddingEnd="24sp"
+        android:paddingBottom="12sp"
+        android:text="그저 그랬어"
+        app:layout_constraintHorizontal_weight="0.5"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
